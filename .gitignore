@@ -50,6 +50,10 @@ temp/
 *.tmp
 *.temp
 
+# Trained ML models
+*.h5
+backend/model/
+
 # Package lock files (optional - uncomment if needed)
 # package-lock.json
 # yarn.lock
