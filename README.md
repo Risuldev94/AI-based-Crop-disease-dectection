@@ -1,133 +1,212 @@
-# 🚀 CivoraX Internship Program 2025-26
+# 🌱 CropGuard AI – Intelligent Crop Disease Detection System
 
-<p align="center">
-  <img src="https://internship.civoranexus.com/CivoraX.png" alt="CivoraX Logo" width="200"/>
-</p>
+CropGuard AI is an end-to-end **AI-powered crop disease detection system** that analyzes leaf images to identify plant diseases, estimate confidence, and recommend treatments.  
+The project integrates **Deep Learning**, a **Flask backend**, and a **modern web-based frontend** to deliver a complete and practical AI solution.
 
-<p align="center">
-  <strong>Launch your tech career with real projects, expert mentorship, and industry-recognized certification</strong>
-</p>
-
-
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Duration-5%20Weeks-blue" alt="Duration"/>
-  <img src="https://img.shields.io/badge/Start%20Date-Jan%205%2C%202026-green" alt="Start Date"/>
-  <img src="https://img.shields.io/badge/End%20Date-Feb%208%2C%202026-orange" alt="End Date"/>
-  <img src="https://img.shields.io/badge/Mode-Remote--First-purple" alt="Mode"/>
-</p>
+This system is designed for:
+- Farmers
+- Agricultural students
+- Researchers
+- Smart agriculture applications
 
 ---
 
-## 📊 Program Statistics
+## 📸 Project Screenshots
 
-| Metric | Value |
-|--------|-------|
-| 🎓 Interns Trained | 300+ |
-| 💼 Live Projects | 20 |
-| ⏱️ Program Duration | 5 Weeks |
+> 📌 Replace the image paths with your actual screenshots (recommended).
 
----
+### Home Page
+![Home Page](screenshots/home.png)
 
+### Image Upload & Analysis
+![Upload](screenshots/upload.png)
 
-## 📅 Program Details
-
-| Detail | Information |
-|--------|-------------|
-| **Duration** | 5-week intensive program |
-| **Dates** | January 5 - February 8, 2026 |
-| **Format** | Remote-first with live sessions and workshops |
-| **Structure** | Real-time project work with weekly milestones |
+### AI Prediction Result
+![Result](screenshots/result.png)
 
 ---
 
-## ✅ Eligibility Criteria
+## 🎯 Project Objective
 
-- ✔️ Students from **any year or degree program**
-- ✔️ Recent graduates and **career switchers** welcome
-- ✔️ **Basic programming knowledge** required
-- ✔️ Strong **passion for technology** and learning
-
----
-
-## 🛠️ Technologies You'll Master
-
-| Category | Technologies |
-|----------|-------------|
-| **Frontend** | React, Next.js |
-| **Backend** | Node.js, Python |
-| **Advanced** | AI & Machine Learning |
-| **Infrastructure** | Cloud & DevOps |
-| **Mobile** | Cross-platform Development |
-| **Database** | SQL & NoSQL Systems |
-| **APIs** | RESTful & GraphQL |
-| **Workflow** | Agile & Git |
+- Detect crop diseases from leaf images using AI
+- Provide confidence score for predictions
+- Recommend appropriate treatment actions
+- Deliver results through a simple, user-friendly web interface
 
 ---
 
-## 📋 Application Process
+## 🧠 What This Project Has **Technically Inside**
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   01. Register  │───▶│  02. Team       │───▶│  03. Receive    │
-│   Online        │    │  Review         │    │  Confirmation   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+### 🔹 1. Deep Learning Model
+- A trained **Convolutional Neural Network (CNN)** model
+- Learns visual patterns from leaf images
+- Classifies diseases such as:
+  - Early Blight
+  - Late Blight
+  - Healthy leaves
+- Outputs:
+  - Disease name
+  - Confidence percentage
 
-1. **📝 Register Online** - Complete your application form with details and preferences
-2. **🔍 CivoraX Team Review** - Our team reviews your application and qualifications
-3. **✉️ Eligibility Email** - Receive confirmation email if selected
-
-
-
-
-## 📞 Contact Information
-
-| Channel | Details |
-|---------|---------|
-| 📧 **Email** | [contact@civoranexus.com](mailto:contact@civoranexus.com) |
-| 📱 **Phone** | [+91 7350675192](tel:+917350675192) |
-| 📍 **Location** | 422605, Sangamner, Maharashtra, India |
-
-### 🔗 Social Links
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-CivoraX-blue?style=flat&logo=linkedin)](https://www.linkedin.com/company/civoranexus)
-[![Instagram](https://img.shields.io/badge/Instagram-CivoraX-E4405F?style=flat&logo=instagram)](https://www.instagram.com/civoranexus)
-[![Twitter](https://img.shields.io/badge/Twitter-CivoraX-1DA1F2?style=flat&logo=twitter)](https://twitter.com/civoranexus)
-[![YouTube](https://img.shields.io/badge/YouTube-CivoraX-FF0000?style=flat&logo=youtube)](https://www.youtube.com/@civoranexus)
+> Model files are excluded from GitHub due to size limitations.
 
 ---
 
-## 🏢 About Civora Nexus
+### 🔹 2. Backend (Flask API)
+The backend is responsible for:
+- Receiving image and crop data
+- Preprocessing images using OpenCV
+- Loading the trained AI model
+- Running predictions
+- Sending structured JSON responses to frontend
 
-**Civora Nexus Pvt. Ltd.** is a technology company empowering communities through innovative civic and healthcare technology solutions.
-
-### Company Services:
-- 🔄 Digital Transformation for Businesses
-- 🏘️ Smart Community & Enterprise Solutions
-- 💡 Affordable Tech Solutions
-- 📊 Data Analytics & Business Insights
-- 🎓 Innovation & Skill Development
-- 🤖 AI & Automation Solutions
+**Key Backend Features**
+- REST API using Flask
+- `/analyze` endpoint for predictions
+- Error handling and validation
+- Modular service-based architecture
 
 ---
 
-## 📚 Quick Links
+### 🔹 3. Image Processing Pipeline
+- Image resizing and normalization
+- Conversion to model-compatible format
+- Ensures consistent prediction results
 
-- 🌐 [Official Website](https://civoranexus.com/)
-- 📋 [Internship Portal](https://civoranexus.com/internships)
-- 🔐 [Certificate Verification](https://internship.civoranexus.com)
-- 📄 [Privacy Policy](https://civoranexus.com/privacy-policy)
-- 📜 [Terms of Service](https://civoranexus.com/terms-and-conditions)
+---
+
+### 🔹 4. Recommendation System
+- Maps detected diseases to:
+  - Treatment steps
+  - Preventive measures
+- Displays actionable insights for users
+
+---
+
+## 🌐 What This Project Has **Outside (User-Facing)**
+
+### 🔹 Frontend (Web Interface)
+- Clean and modern UI
+- Built using:
+  - HTML
+  - CSS
+  - JavaScript
+  - Tailwind CSS
+- Features:
+  - Crop name input
+  - Image upload
+  - Real-time AI analysis
+  - Clear result visualization
+
+---
+
+### 🔹 User Interaction Flow
+1. User enters crop name
+2. User uploads leaf image
+3. Clicks **Analyze Image**
+4. AI processes the image
+5. Results displayed:
+   - Disease name
+   - Confidence score
+   - Treatment recommendation
+
+---
+
+## 🔁 System Architecture
+User
+│
+│ (Image + Crop Name)
+▼
+Frontend (HTML/CSS/JS)
+│
+│ HTTP POST /analyze
+▼
+Flask Backend
+│
+│ Image Preprocessing
+│ AI Model Prediction
+│ Recommendation Mapping
+▼
+Prediction Response (JSON)
+│
+▼
+Frontend UI (Results Display)
 
 
+---
 
-<p align="center">
-  <strong>© 2025 Civora Nexus Pvt. Ltd. All rights reserved.</strong>
-</p>
+## 🛠️ Tech Stack
 
-<p align="center">
-  Made with ❤️ by CivoraX Team
-</p>
+### Backend
+- Python
+- Flask
+- TensorFlow / Keras
+- OpenCV
+- NumPy
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS
+
+### Tools
+- VS Code
+- Git & GitHub
+
+---
+
+## 📂 Project Structure
+│
+├── backend/ # Flask app, AI logic, services
+├── frontend/ # HTML, CSS, JavaScript UI
+├── data/ # Dataset or sample structure
+├── requirements.txt # Python dependencies
+├── README.md # Documentation
 
 
+---
+
+## ⚙️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate   # Windows
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+4️⃣ Run the Backend
+python -m backend.app
+
+Backend runs at:
+
+http://127.0.0.1:5000
+5️⃣ Run the Frontend
+
+Open:
+
+frontend/index.html
+
+in your browser.
+
+🧪 How to Use
+
+Enter crop name (e.g., Apple, Tomato)
+
+Upload a clear leaf image
+
+Click Analyze Image
+
+View AI results and recommendations
+
+📊 Dataset Information
+
+Plant disease dataset with healthy and diseased leaf images
+
+Multiple crop categories
+
+Dataset not included due to size constraints

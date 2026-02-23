@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriScan - Crop Disease Detection</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 font-sans min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center gap-2">
+        <i class="fa-solid fa-leaf text-green-600 text-2xl"></i>
+        <span class="font-bold text-xl text-green-900">AgriScan</span>
+    </div>
+</nav>
+
+<!-- Main -->
+<main class="max-w-5xl mx-auto px-4 py-10">
+
+    <!-- Title -->
+    <div class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-green-900">
+            Smart Crop <span class="text-green-600">Disease Detection</span>
+        </h1>
+        <p class="text-gray-500 mt-2">
+            Upload a crop leaf image and analyze diseases using AI
+        </p>
+    </div>
+
+    <!-- App Card -->
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div class="grid md:grid-cols-2">
+
+            <!-- LEFT SIDE -->
+            <div class="p-8 bg-gray-50">
+
+                <!-- FORM (IMPORTANT) -->
+                <form id="uploadForm" class="space-y-4">
+
+                    <!-- Crop Name -->
+                    <div>
+                        <label class="font-semibold text-gray-700">Crop Name</label>
+                        <input type="text" name="crop"
+                               placeholder="e.g., Apple, Tomato"
+                               class="w-full mt-1 px-3 py-2 border rounded-lg"
+                               required>
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div id="uploadArea"
+                         class="border-2 border-dashed rounded-xl p-6 text-center cursor-pointer">
+                        <i class="fa-solid fa-cloud-arrow-up text-3xl text-green-600 mb-2"></i>
+                        <p class="font-semibold">Click to upload image</p>
+                        <p class="text-sm text-gray-400">JPG / PNG</p>
+                        <input type="file" id="fileInput" name="image"
+                               class="hidden" accept="image/*" required>
+                    </div>
+
+                    <!-- Preview -->
+                    <div id="previewContainer" class="hidden">
+                        <img id="imagePreview"
+                             class="rounded-xl shadow-md max-h-64 mx-auto">
+                    </div>
+
+                    <!-- Analyze Button -->
+                    <button type="submit"
+                            id="analyzeBtn"
+                            class="w-full bg-green-900 text-white py-3 rounded-xl font-semibold">
+                        Analyze Image
+                    </button>
+                </form>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="p-8 flex items-center justify-center">
+
+                <div id="initialState" class="text-gray-400 text-center">
+                    <i class="fa-regular fa-clipboard text-6xl mb-4"></i>
+                    <p>Results will appear here</p>
+                </div>
+
+                <div id="loadingState" class="hidden text-green-600 font-semibold">
+                    Analyzing...
+                </div>
+
+                <div id="resultContainer" class="hidden w-full">
+                    <h2 id="diseaseName"
+                        class="text-2xl font-bold text-green-900 mb-2"></h2>
+
+                    <p class="mb-3">
+                        Confidence:
+                        <span id="confidenceScore"
+                              class="font-bold text-green-600"></span>
+                    </p>
+
+                    <p id="descriptionText" class="text-gray-600"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
