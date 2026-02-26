@@ -16,7 +16,7 @@ This system is designed for:
 > 📌 Replace the image paths with your actual screenshots (recommended).
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/homepage.png)
 
 ### Image Upload & Analysis
 ![Upload](screenshots/upload.png)
@@ -208,5 +208,6 @@ View AI results and recommendations
 Plant disease dataset with healthy and diseased leaf images
 
 Multiple crop categories
+
 
 Dataset not included due to size constraints
