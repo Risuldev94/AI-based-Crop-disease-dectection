@@ -1,4 +1,4 @@
-# 🌱 CropGuard AI – Intelligent Crop Disease Detection System
+# 🌱 AgriScan AI – Intelligent Crop Disease Detection System
 
 CropGuard AI is an end-to-end **AI-powered crop disease detection system** that analyzes leaf images to identify plant diseases, estimate confidence, and recommend treatments.  
 The project integrates **Deep Learning**, a **Flask backend**, and a **modern web-based frontend** to deliver a complete and practical AI solution.
@@ -211,3 +211,4 @@ Multiple crop categories
 
 
 Dataset not included due to size constraints
+
